@@ -1,6 +1,20 @@
 [![CI](https://github.com/nogibjj/aws-template/actions/workflows/cicd.yml/badge.svg?branch=main)](https://github.com/nogibjj/aws-template/actions/workflows/cicd.yml)
 [![Codespaces Prebuilds](https://github.com/nogibjj/aws-template/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg?branch=main)](https://github.com/nogibjj/aws-template/actions/workflows/codespaces/create_codespaces_prebuilds)
 
+# Serverless GPT Coding Interviewer
+
+Goals:
+- Build a serverless web application to mock coding interview with GPT-empowered interviewer.
+- Link with GPT3.5 api, pretrain and let GPT analyze your code and ask followup question such as complexity, optimizing the code.
+- Use Amazon Lambda to make it serverless.
+- Maybe further use any voice AI that need you to record your respone and interact with GPT interviewer.
+
+
+
+
+
+
+
 ## Template for AWS Projects
 
 1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.

@@ -3,17 +3,14 @@
 
 # Serverless GPT Coding Interviewer
 
-## Progress:
-1. Almost finish the Interviewer Chatbot and UI in Gradio
+Endpoint: https://zhuminghui-coding-interviewer.hf.space/
 
-## Next Steps:
-1. Make more use of GPT to make it more flexible
-2. Combine of AWS Lambda
+## Highlights
+- Built a serverless GPT-empowered coding interviewer chatbot, whe the interviewer can analyze users' code and ask questions for users about time and space complexity, and related follow-up questions. 
+- Deployed in Hugging Face Spaces (super easy, highly recommand!)
 
-## Goals:
-- Build a serverless web application to mock coding interview with GPT-empowered interviewer.
-- Link with GPT3.5 api, pretrain and let GPT analyze your code and ask followup question such as complexity, optimizing the code.
-- Use Amazon Lambda to make it serverless.
+## Future Steps:
+- Make it more flexible.
 - Maybe further use any voice AI that need you to record your respone and interact with GPT interviewer.
 
 ## Steps

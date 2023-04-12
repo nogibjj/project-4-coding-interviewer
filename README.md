@@ -3,7 +3,14 @@
 
 # Serverless GPT Coding Interviewer
 
-Goals:
+## Progress:
+1. Almost finish the Interviewer Chatbot and UI in Gradio
+
+## Next Steps:
+1. Make more use of GPT to make it more flexible
+2. Combine of AWS Lambda
+
+## Goals:
 - Build a serverless web application to mock coding interview with GPT-empowered interviewer.
 - Link with GPT3.5 api, pretrain and let GPT analyze your code and ask followup question such as complexity, optimizing the code.
 - Use Amazon Lambda to make it serverless.

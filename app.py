@@ -1,7 +1,8 @@
 import gradio as gr
 import openai
 
-from test import generatePrompt, generate_response, identifyKeyInfo, GiveOverallScore, APIKEY 
+from lib import generatePrompt, generate_response, identifyKeyInfo, GiveOverallScore
+from key import APIKEY
 
 openai.api_key = APIKEY
 

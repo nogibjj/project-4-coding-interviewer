@@ -3,7 +3,7 @@
 
 # Serverless GPT Coding Interviewer
 
-Endpoint: https://duke-coding-interviewer.hf.space/
+Endpoint: https://dukemsec-coding-interviewer.hf.space/
 
 ## Highlights
 - Built a serverless GPT-empowered coding interviewer chatbot, whe the interviewer can analyze users' code and ask questions for users about time and space complexity, and related follow-up questions. 

@@ -1,6 +1,6 @@
 import openai
 
-APIKEY = "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"
+from key import APIKEY
 
 
 openai.api_key = APIKEY
@@ -36,11 +36,46 @@ def generate_response(prompt, model="text-davinci-003", max_tokens=2000):
     return message
 
 
-questionLink = "https://leetcode.com/problems/two-sum/"
-samplecode = "class Solution: def twoSum(self, nums: List[int], target: int) -> List[int]: d = {} for i, num in enumerate(nums): if target - num not in d: d[num] = i else: return[i, d[target-num]]"
+def identifyKeyInfo(phase, userInput, model="text-davinci-003", max_tokens=2000):
+    prompt = f"You now act as an coding interviewer. Now you need substract the key information from the prompt. \
+              For example, if your are in the phase of asking for leetcode link, you need to identify the link from the prompt and return the link string. \
+              If you are in the phase of asking for code snippet, you need to identify the code snippet from the prompt and return the code snippet string. \
+              If you are in the phase of asking for time and complexity, you need to identify the complexity formatted as O(N) from the prompt and return the complexity string. \
+              If you think user input can not match current phase, pls return '400' as a string. Thank you.  \
+              Now you are in phare of {phase}, please substract the key info from user input {userInput}!"
+    
+    response = openai.Completion.create(
+        engine=model,
+        prompt=prompt,
+        max_tokens=max_tokens,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
 
-# prompt = generatePrompt(questionLink, samplecode)
-# print(prompt)
+    message = response.choices[0].text.strip()
+    return message
 
-# response = generate_response(prompt)
-# print(response)
+
+def GiveOverallScore(history, model="text-davinci-003", max_tokens=2000):
+    prompt = f"You now act as an coding interviewer. Now you need to give overall score to the user. \
+              You will be given the history of the conversation \n \
+             '{history}'. Please analyze user's code for the leetcode problem (efficient, readibility), \
+              user's answers for time complexity and space complexity, user's follow-up questions. \n \
+              Your need to return a dictionary with following keys: \
+              'overall score out of 100': 'you add', 'feedbacks': 'you add'. \
+              Please use double quotes for the keys and values when you output the dictionary. \
+              Or you need to aviod use quotes in your values strings. \
+              Also, if your score is not generous, please include the improvement points for users. Thank you."
+    
+    response = openai.Completion.create(
+        engine=model,
+        prompt=prompt,
+        max_tokens=max_tokens,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+
+    message = response.choices[0].text.strip()
+    return message

@@ -1,3 +1,6 @@
+#ignore key
+key.py
+
 #ignore huggingface
 summarizeApp
 #ignore fine-tuning

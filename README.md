@@ -5,38 +5,22 @@
 
 Endpoint: https://dukemsec-coding-interviewer.hf.space/
 
-## Highlights
+## Intro
+Welcome to the readme for the Serverless GPT Coding Interviewer project! This project is a serverless GPT-empowered coding interviewer chatbot that analyzes users' code and asks questions about time and space complexity, and related follow-up questions. The chatbot is deployed in Hugging Face Spaces, which makes deployment super easy and highly recommended.
 - Built a serverless GPT-empowered coding interviewer chatbot, whe the interviewer can analyze users' code and ask questions for users about time and space complexity, and related follow-up questions. 
-- Deployed in Hugging Face Spaces (super easy, highly recommand!)
 
-## Future Steps:
-- Make it more flexible.
-- Maybe further use any voice AI that need you to record your respone and interact with GPT interviewer.
+## Getting Started
+To get started with the Serverless GPT Coding Interviewer, simply visit the endpoint URL provided above (https://dukemsec-coding-interviewer.hf.space/). This will take you to the chatbot interface where you can begin interacting with the chatbot.
 
-## Steps
-- Define the application architecture: The first step is to define the architecture of the application. Since we are building a serverless application, we will be using AWS Lambda to run the backend code. For the frontend, we can use a simple HTML page and JavaScript to interact with the Lambda functions.
-
-- Setup AWS Lambda: Next, we need to create an AWS Lambda function to handle the backend logic of the application. We can use any programming language that Lambda supports. For example, we can use Node.js or Python to write the Lambda function.
-
-- Integrate GPT3.5 API: We will use the OpenAI API to integrate GPT3.5 into our application. We need to sign up for an API key from OpenAI and then use it to make API requests from our Lambda function.
-
-- Define the interview flow: We need to define the flow of the interview. For example, we can start with a simple coding question and then ask follow-up questions based on the response. We can use GPT3.5 to analyze the code and suggest improvements or ask questions about the complexity of the solution.
-
-- Build the frontend: We can use HTML and JavaScript to build the frontend of the application. We can create a simple form where the user can input their code and submit it to the backend. We can also add a microphone input to allow the user to speak their answers to the interviewer.
-
-- Implement the interview logic: We need to write the Lambda function to handle the interview logic. The function should receive the user's code and use GPT3.5 to analyze it and generate follow-up questions. The function should then return the questions to the frontend, which can display them to the user.
-
-- Test and deploy: Once the application is complete, we can test it locally and then deploy it to AWS Lambda. We can use the AWS CLI or the AWS Console to deploy the application. We should also test the application thoroughly to ensure that it works as expected.
-
-In summary, building a serverless web application to mock a coding interview with a GPT-empowered interviewer involves defining the application architecture, setting up AWS Lambda, integrating GPT3.5 API, defining the interview flow, building the frontend, implementing the interview logic, and testing and deploying the application.
+## Usage
+To use the Serverless GPT Coding Interviewer, simply enter your code into the chatbot interface. The chatbot will then analyze your code and ask you questions about its time and space complexity, as well as any related follow-up questions. You can respond to the chatbot's questions and continue the conversation until you feel that you have received a thorough analysis of your code.
 
 
 
-
-
-
-
-
+## Deployment
+The Serverless GPT Coding Interviewer is deployed in Hugging Face Spaces, which makes deployment super easy and highly recommended. If you would like to deploy your own version of the chatbot, you can follow the instructions provided in the Hugging Face Spaces documentation.
+<img width="1440" alt="Screenshot 2023-05-04 at 11 33 47 PM" src="https://user-images.githubusercontent.com/68854273/236372863-587c0297-f76d-481a-b4b1-6fae2ed207d2.png">
+<img width="1439" alt="Screenshot 2023-05-04 at 11 34 12 PM" src="https://user-images.githubusercontent.com/68854273/236372884-fc2febbe-86da-46ec-b03c-3b60af1b9298.png">
 
 
 
